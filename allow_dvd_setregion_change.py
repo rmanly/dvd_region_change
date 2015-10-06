@@ -18,8 +18,7 @@ def get_initial_settings():
 def modify_plist():
     settings = plistlib.readPlistFromString(get_initial_settings())
     settings['class'] = 'allow'
-    settings['comment'] = 'Allows any user to change the DVD region \
-            code after it has been set the first time.'
+    settings['comment'] = 'Allows any user to change the DVD region code after it has been set the first time.'
     settings['group'] = 'user'
     return settings
 
